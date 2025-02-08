@@ -2,13 +2,20 @@
 ## 1.1 Project Overview
 **“Borto2ana”** is an AI assistant designed for **Orange Egypt** to serve as an in-store (or public) customer service kiosk. By leveraging speech-to-speech technology in Egyptian Arabic, Borto2ana streamlines various customer requests—ranging from extracting a new SIM card to managing service options. The goal is to reduce branch crowding by offering a convenient, automated alternative for customers.
 Key Objectives:
+
 •	Provide an interactive, speech-based system for customers who prefer or need assistance in Arabic.
+
 •	Enable quick and independent transactions, including tasks like obtaining a new SIM card.
+
 •	Offload routine inquiries to an AI-driven service, allowing human staff to handle complex cases.
+
 ## 1.2 Why It Matters
 •	Customer Convenience: Customers can quickly resolve their needs without waiting in lines.
+
 •	Scalability: Deploying multiple kiosks can extend service availability beyond standard branch hours or even in remote locations.
+
 •	Consistency: The AI assistant delivers the same level of service across all kiosks, reducing variability.
+
 ## 1.3 Intended Audience
 This documentation is primarily for software engineers and technical teams who will install, configure, or maintain the Borto2ana system. It also offers insight for Orange Egypt project managers who need a clear overview of the solution’s capabilities and requirements.
 
@@ -16,11 +23,17 @@ This documentation is primarily for software engineers and technical teams who w
 # 2. System Requirements 
 ## 2.1 Software Requirements
 •	Programming Language: Python 3.8+ recommended.
+
 •	Frameworks/Libraries:
+
 o	PyTorch or TensorFlow 
+
 o	Speech Recognition library (e.g., OpenAI Whisper and OpenAI GPT-4o-mini-audio).
+
 o	Speech Synthesis library (e.g.,sounddevice, wavio).
+
 o	Tkinter
+
 o	Other standard Python libraries (openai, numpy,pathlib, ffmpeg,openpyxl).
 
 # 3. Architecture Overview
@@ -30,26 +43,37 @@ o	Other standard Python libraries (openai, numpy,pathlib, ffmpeg,openpyxl).
 
 ## 3.2 Components Breakdown
 •	Speech Recognition (ASR):
+
 o	Converts real-time Egyptian Arabic audio into text.
+
 o	Using Whisper Model From OpenAI.
+
 •	Dialogue/Decision Logic:
+
 o	Interprets the text input, determines user intent (e.g., “Get a new SIM”).
+
 o	Connects to Orange’s backend systems if needed.
+
 •	Text-to-Speech (TTS):
+
 o	Generates responses in Egyptian Arabic.
+
 o	Outputs spoken language using gpt-4o-mini-audio Model
+
 •	User Interface Layer:
+
 o	Could include a screen to display text-based prompts or instructions.
+
 o	Though Borto2ana is primarily speech-based, a minimal UI might show progress or error messages.
 
 
 ## 3.3 Data Flow
 1.	Audio Input: The customer speaks into the kiosk microphone.
-2.	ASR: The system transcribes the audio into text.
-3.	Intent Analysis: The text is passed to a dialogue manager or some custom logic that detects what the user wants.
-4.	Backend Interaction: If required (e.g., to trigger a SIM card dispenser), the system makes an API call or triggers hardware.
-5.	Response Generation: The system composes a textual response, which then goes to the TTS engine.
-6.	Audio Output: The TTS output is played back to the user.
+3.	ASR: The system transcribes the audio into text.
+4.	Intent Analysis: The text is passed to a dialogue manager or some custom logic that detects what the user wants.
+5.	Backend Interaction: If required (e.g., to trigger a SIM card dispenser), the system makes an API call or triggers hardware.
+6.	Response Generation: The system composes a textual response, which then goes to the TTS engine.
+7.	Audio Output: The TTS output is played back to the user.
 
 # 4. Getting Started
 ## 4.1 Overview
@@ -60,19 +84,18 @@ This section helps you quickly verify that Borto2ana runs in a development envir
 
 4.2 Quick Installation
 1.	Clone the Repo
-ذذذ
+'''git clone https://github.com/Orange-Hackathon-2025/Osiris.git'''
 ذ
-
-2.	Create a Virtual Environment (Optional but recommended)
-
+1.	Create a Virtual Environment (Optional but recommended)
 
 
 
-3.	Install Dependencies
+
+2.	Install Dependencies
 
 
 
-4.	Run the Basic Demo
+3.	Run the Basic Demo
 
 
 # 6. User Guide
