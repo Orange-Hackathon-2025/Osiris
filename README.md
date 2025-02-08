@@ -91,7 +91,7 @@ This section helps you quickly verify that Borto2ana runs in a development envir
 ## 4.2 Quick Installation
 1. Clone The Repo
    
-```git clone [https://github.com/orange-egypt/borto2ana](https://github.com/Orange-Hackathon-2025/Osiris.git)```
+```git clone https://github.com/orange-egypt/borto2ana```
 
 
 2.	Install Dependencies
