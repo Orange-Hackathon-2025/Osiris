@@ -1,3 +1,6 @@
+# Important note 
+This a personal open ai api key, so we added a demo to avoid trying the api yourself, kindly check the two videos
+
 # Assumptions:
 • We simulated an excel sheet that contains only some important features (as:age,Nat Id,phone num, ...)as the customers database that exists in orange data warehouse and provided the model with this data to retrive important information from it that may help in asnwering the customer questions.
 
