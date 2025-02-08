@@ -1,6 +1,7 @@
 # Assumptions:
--We simulated an excel sheet that contains only some important features (as:age,Nat Id,phone num, ...)as the customers database that exists in orange data warehouse and provided the model with this data to retrive important information from it that may help in asnwering the customer questions.
--We also assume that the security condition are applied before the tool starts its job (as verifying the customer face or finger print)
+• We simulated an excel sheet that contains only some important features (as:age,Nat Id,phone num, ...)as the customers database that exists in orange data warehouse and provided the model with this data to retrive important information from it that may help in asnwering the customer questions.
+
+• We also assume that the security condition are applied before the tool starts its job (as verifying the customer face or finger print)
 
 
 # 1. Introduction
