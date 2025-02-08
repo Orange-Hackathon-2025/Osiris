@@ -1,0 +1,15 @@
+python == 3.10.11
+pip == 25.0
+ffmpeg == 1.4
+tkinter 
+sounddevice 
+numpy = 2.1.2
+wavio== 0.0.9
+os
+openai == 1.61.1
+playsound = 1.2.2
+playsound3 = 2.4.0
+pathlib 
+pandas == 2.2.3
+openpyxl == 3.1.5 
+
