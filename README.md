@@ -1,3 +1,8 @@
+# Assumptions:
+-We simulated an excel sheet that contains only some important features (as:age,Nat Id,phone num, ...)as the customers database that exists in orange data warehouse and provided the model with this data to retrive important information from it that may help in asnwering the customer questions.
+-We also assume that the security condition are applied before the tool starts its job (as verifying the customer face or finger print)
+
+
 # 1. Introduction
 ## 1.1 Project Overview
 **“Borto2ana”** is an AI assistant designed for **Orange Egypt** to serve as an in-store (or public) customer service kiosk. By leveraging speech-to-speech technology in Egyptian Arabic, Borto2ana streamlines various customer requests—ranging from extracting a new SIM card to managing service options. The goal is to reduce branch crowding by offering a convenient, automated alternative for customers.
@@ -82,29 +87,31 @@ This section helps you quickly verify that Borto2ana runs in a development envir
 2.	Installing Minimal Dependencies
 3.	Running a Simple Demo
 
-4.2 Quick Installation
+## 4.2 Quick Installation
 1. Clone The Repo
    
 ```git clone [https://github.com/orange-egypt/borto2ana](https://github.com/Orange-Hackathon-2025/Osiris.git)```
 
 
-3.	Install Dependencies
+2.	Install Dependencies
+   
 ```pip install Requirements.txt```
 
-4.	Run the Basic Demo
+3.	Run the Basic Demo
+   
 ```python Borto2ana.py```
 
-# 6. User Guide
+# 5. User Guide
 The User Guide focuses on how a customer interacts with Borto2ana and what functionalities are available.
 
-## 6.1 Basic Interaction
+## 5.1 Basic Interaction
 1.	Initiating the Session:
  o	The user approaches the kiosk and either says a wake word (e.g., “Borto2ana”) or taps “Start” on a touchscreen.
 2.	Speaking the Request:
  o	The user states their need in Egyptian Arabic, e.g., “عايز أطلع خط جديد” (“I want a new SIM card”).
 3.	System Response:
  o	The system transcribes the request, determines the intent, and provides a spoken response, e.g., “حاضر، هطلعلك خط جديد حالاً.” (“Sure, I’ll get you a new SIM right away.”)
-## 6.2 Available Services
+## 5.2 Available Services
 •	Extract a SIM Card:
 
  o	The kiosk or an attached dispenser may provide a new SIM after confirming user details.
@@ -117,12 +124,13 @@ The User Guide focuses on how a customer interacts with Borto2ana and what funct
  
  o	The system can retrieve the user’s account info after identification or OTP verification.
 
-## 6.3 Common Prompts & Best Practices
+## 5.3 Common Prompts & Best Practices
 •	Speak Clearly: Encourage users to talk at a normal volume and pace.
 
 •	Confirmation Prompts: Borto2ana may confirm critical actions, e.g., “هل أنت متأكد؟” (“Are you sure?”).
 
 •	Error Handling: If the system fails to understand, it may say, “معلش ممكن تعيد تاني؟” (“Sorry, could you repeat that?”).
+
 
 
 
