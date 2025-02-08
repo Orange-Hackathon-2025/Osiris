@@ -84,21 +84,14 @@ This section helps you quickly verify that Borto2ana runs in a development envir
 
 4.2 Quick Installation
 1. Clone The Repo
-```git clone [https://github.com/orange-egypt/borto2ana](https://github.com/Orange-Hackathon-2025/Osiris.git)
-
-
-ذ1
-1.	Create a Virtual Environment (Optional but recommended)
-
-
+```git clone [https://github.com/orange-egypt/borto2ana](https://github.com/Orange-Hackathon-2025/Osiris.git)```
 
 
 2.	Install Dependencies
-
-
+``` pip install Requirements.txt```
 
 3.	Run the Basic Demo
-
+``` python Borto2ana.py```
 
 # 6. User Guide
 The User Guide focuses on how a customer interacts with Borto2ana and what functionalities are available.
@@ -112,10 +105,15 @@ The User Guide focuses on how a customer interacts with Borto2ana and what funct
  o	The system transcribes the request, determines the intent, and provides a spoken response, e.g., “حاضر، هطلعلك خط جديد حالاً.” (“Sure, I’ll get you a new SIM right away.”)
 ## 6.2 Available Services
 •	Extract a SIM Card:
+
  o	The kiosk or an attached dispenser may provide a new SIM after confirming user details.
+ 
  o	The system walks the user through identification steps.
+ 
 •	Account & Billing Inquiries (if enabled):
+
  o	“عايز أعرف رصيدي” (“I want to know my balance”).
+ 
  o	The system can retrieve the user’s account info after identification or OTP verification.
 
 ## 6.3 Common Prompts & Best Practices
