@@ -26,15 +26,15 @@ This documentation is primarily for software engineers and technical teams who w
 
 •	Frameworks/Libraries:
 
-o	PyTorch or TensorFlow 
+ o	PyTorch or TensorFlow 
 
-o	Speech Recognition library (e.g., OpenAI Whisper and OpenAI GPT-4o-mini-audio).
+ o	Speech Recognition library (e.g., OpenAI Whisper and OpenAI GPT-4o-mini-audio).
 
-o	Speech Synthesis library (e.g.,sounddevice, wavio).
+ o	Speech Synthesis library (e.g.,sounddevice, wavio).
 
-o	Tkinter
+ o	Tkinter
 
-o	Other standard Python libraries (openai, numpy,pathlib, ffmpeg,openpyxl).
+ o	Other standard Python libraries (openai, numpy,pathlib, ffmpeg,openpyxl).
 
 # 3. Architecture Overview
  
@@ -44,27 +44,27 @@ o	Other standard Python libraries (openai, numpy,pathlib, ffmpeg,openpyxl).
 ## 3.2 Components Breakdown
 •	Speech Recognition (ASR):
 
-o	Converts real-time Egyptian Arabic audio into text.
+ o	Converts real-time Egyptian Arabic audio into text.
 
-o	Using Whisper Model From OpenAI.
+ o	Using Whisper Model From OpenAI.
 
 •	Dialogue/Decision Logic:
 
-o	Interprets the text input, determines user intent (e.g., “Get a new SIM”).
+ o	Interprets the text input, determines user intent (e.g., “Get a new SIM”).
 
-o	Connects to Orange’s backend systems if needed.
+ o	Connects to Orange’s backend systems if needed.
 
 •	Text-to-Speech (TTS):
 
-o	Generates responses in Egyptian Arabic.
+ o	Generates responses in Egyptian Arabic.
 
-o	Outputs spoken language using gpt-4o-mini-audio Model
+ o	Outputs spoken language using gpt-4o-mini-audio Model
 
 •	User Interface Layer:
 
-o	Could include a screen to display text-based prompts or instructions.
+ o	Could include a screen to display text-based prompts or instructions.
 
-o	Though Borto2ana is primarily speech-based, a minimal UI might show progress or error messages.
+ o	Though Borto2ana is primarily speech-based, a minimal UI might show progress or error messages.
 
 
 ## 3.3 Data Flow
@@ -84,7 +84,6 @@ This section helps you quickly verify that Borto2ana runs in a development envir
 
 4.2 Quick Installation
 1.	Clone the Repo
-'''git clone https://github.com/Orange-Hackathon-2025/Osiris.git'''
 ذ
 1.	Create a Virtual Environment (Optional but recommended)
 
@@ -103,23 +102,26 @@ The User Guide focuses on how a customer interacts with Borto2ana and what funct
 
 ## 6.1 Basic Interaction
 1.	Initiating the Session:
-o	The user approaches the kiosk and either says a wake word (e.g., “Borto2ana”) or taps “Start” on a touchscreen.
+ o	The user approaches the kiosk and either says a wake word (e.g., “Borto2ana”) or taps “Start” on a touchscreen.
 2.	Speaking the Request:
-o	The user states their need in Egyptian Arabic, e.g., “عايز أطلع خط جديد” (“I want a new SIM card”).
+ o	The user states their need in Egyptian Arabic, e.g., “عايز أطلع خط جديد” (“I want a new SIM card”).
 3.	System Response:
-o	The system transcribes the request, determines the intent, and provides a spoken response, e.g., “حاضر، هطلعلك خط جديد حالاً.” (“Sure, I’ll get you a new SIM right away.”)
+ o	The system transcribes the request, determines the intent, and provides a spoken response, e.g., “حاضر، هطلعلك خط جديد حالاً.” (“Sure, I’ll get you a new SIM right away.”)
 ## 6.2 Available Services
 •	Extract a SIM Card:
-o	The kiosk or an attached dispenser may provide a new SIM after confirming user details.
-o	The system walks the user through identification steps.
+ o	The kiosk or an attached dispenser may provide a new SIM after confirming user details.
+ o	The system walks the user through identification steps.
 •	Account & Billing Inquiries (if enabled):
-o	“عايز أعرف رصيدي” (“I want to know my balance”).
-o	The system can retrieve the user’s account info after identification or OTP verification.
+ o	“عايز أعرف رصيدي” (“I want to know my balance”).
+ o	The system can retrieve the user’s account info after identification or OTP verification.
 
 ## 6.3 Common Prompts & Best Practices
 •	Speak Clearly: Encourage users to talk at a normal volume and pace.
+
 •	Confirmation Prompts: Borto2ana may confirm critical actions, e.g., “هل أنت متأكد؟” (“Are you sure?”).
+
 •	Error Handling: If the system fails to understand, it may say, “معلش ممكن تعيد تاني؟” (“Sorry, could you repeat that?”).
+
 
 
 
