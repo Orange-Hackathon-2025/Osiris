@@ -84,14 +84,15 @@ This section helps you quickly verify that Borto2ana runs in a development envir
 
 4.2 Quick Installation
 1. Clone The Repo
+   
 ```git clone [https://github.com/orange-egypt/borto2ana](https://github.com/Orange-Hackathon-2025/Osiris.git)```
 
 
-2.	Install Dependencies
-``` pip install Requirements.txt```
+3.	Install Dependencies
+```pip install Requirements.txt```
 
-3.	Run the Basic Demo
-``` python Borto2ana.py```
+4.	Run the Basic Demo
+```python Borto2ana.py```
 
 # 6. User Guide
 The User Guide focuses on how a customer interacts with Borto2ana and what functionalities are available.
